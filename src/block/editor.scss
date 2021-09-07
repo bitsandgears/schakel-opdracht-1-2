@@ -1,0 +1,30 @@
+.wp-block-schakel-opdrachten-opdracht-1-carflow {
+	.carflow-block {
+		&__title {
+			textarea.block-editor-plain-text {
+				font-family: "Poppins", Arial, sans-serif;
+			}
+		}
+
+		&__content {
+			p.block-editor-rich-text__editable {
+				font-family: "Inter", Arial, sans-serif;
+			}
+		}
+	}
+}
+
+.wp-block.is-selected {
+	.carflow-block {
+		&__img-wrapper {
+			.block-editor-media-placeholder {
+				z-index: 100;
+			}
+			&:hover {
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+}

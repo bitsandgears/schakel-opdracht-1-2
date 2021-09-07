@@ -1,0 +1,101 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@700&display=swap");
+
+$carflow-primary-color: #d6392a;
+$carflow-black-color: #505050;
+$carflow-grid-size: 16px;
+
+.wp-block-schakel-opdrachten-opdracht-1-carflow {
+	color: $carflow-black-color;
+	margin: 0 auto;
+	max-width: 740px;
+	padding: $carflow-grid-size * 2;
+
+	.carflow-block {
+		&__title {
+			font-family: "Poppins", Arial, sans-serif;
+			font-size: 2rem;
+			margin: 0 auto 2rem;
+			color: darken($color: $carflow-black-color, $amount: 3);
+		}
+		&__content {
+			padding: $carflow-grid-size * 2;
+			font-family: "Inter", Arial, sans-serif;
+			font-size: 1rem;
+			position: relative;
+			top: -125px;
+			left: -75px;
+			background-color: white;
+
+			-webkit-box-shadow: 0px 5px 6px 0px rgba(140, 41, 41, 0.3);
+			-moz-box-shadow: 0px 5px 6px 0px rgba(50, 50, 50, 0.3);
+			box-shadow: 0px 5px 6px 0px rgba(50, 50, 50, 0.3);
+
+			p {
+				line-height: 1.6;
+			}
+
+			a {
+				color: $carflow-primary-color;
+				font-weight: bold;
+				text-decoration: none;
+			}
+		}
+		&__img-wrapper {
+			position: relative;
+			display: inline-block;
+
+			&:after {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				display: inline-block;
+				background: -moz-linear-gradient(
+					top,
+					rgba(80, 80, 80, 0.5) 0%,
+					rgba(220, 66, 37, 0.5) 100%
+				); /* FF3.6+ */
+				background: -webkit-gradient(
+					linear,
+					left top,
+					left bottom,
+					color-stop(0%, rgba(220, 66, 37, 0.5)),
+					color-stop(100%, rgba(80, 80, 80, 0.5))
+				); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(
+					top,
+					rgba(80, 80, 80, 0.5) 0%,
+					rgba(220, 66, 37, 0.5) 100%
+				); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(
+					top,
+					rgba(80, 80, 80, 0.5) 0%,
+					rgba(220, 66, 37, 0.5) 100%
+				); /* Opera 11.10+ */
+				background: -ms-linear-gradient(
+					top,
+					rgba(80, 80, 80, 0.5) 0%,
+					rgba(220, 66, 37, 0.5) 100%
+				); /* IE10+ */
+				background: linear-gradient(
+					to bottom,
+					rgba(80, 80, 80, 0.5) 0%,
+					rgba(220, 66, 37, 0.5) 100%
+				); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+			}
+
+			img {
+				display: block;
+			}
+		}
+	}
+}
